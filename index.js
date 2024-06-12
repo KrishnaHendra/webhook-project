@@ -2,7 +2,7 @@ import express from "express";
 
 const app = express();
 
-const port = 3000;
+const port = 8082;
 const FB_VERIFY_TOKEN = "krisna123*";
 
 app.get("/facebook/webhook", (req, res) => {
