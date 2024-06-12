@@ -5,6 +5,12 @@ const app = express();
 const port = 8082;
 const FB_VERIFY_TOKEN = "krisna123*";
 
+app.get("/", (req, res) => {
+  res.json({
+    message: "Success",
+  });
+});
+
 app.get("/facebook/webhook", (req, res) => {
   console.log("FACEBOOK WEBHOOK VERIFICATION REQUEST");
   if (
